@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .card {
+            padding: 20px;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .red { background-color: #e74c3c; }
+        .blue { background-color: #3498db; }
+        .yellow { background-color: #f1c40f; }
+        .green { background-color: #2ecc71; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div class="dashboard">
+            <div class="card red">4<br>Total Number of Users</div>
+            <div class="card blue">5<br>Total Computers</div>
+            <div class="card yellow">0<br>Total New Users (Not in Cafe)</div>
+            <div class="card green">4<br>Old Users (Quit from Cafe)</div>
+        </div>
+    </div>
+</body>
+</html>
